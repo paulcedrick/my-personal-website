@@ -47,31 +47,22 @@ export default function AboutSection() {
             <span className="text-slate-200 font-bold">Next.js</span>
           </li>
           <li className="text-xs font-semibold text-indigo-300">
-            <span className="text-slate-200 font-bold">Tailwindcss</span>
+            <span className="text-slate-200 font-bold">Tailwind CSS</span>
           </li>
           <li className="text-xs font-semibold text-indigo-300">
-            <span className="text-slate-200 font-bold">
-              Mantine (UI Framework)
-            </span>
+            <span className="text-slate-200 font-bold">SST</span>
           </li>
           <li className="text-xs font-semibold text-indigo-300">
-            <span className="text-slate-200 font-bold">
-              SST (Framework on top of AWS CDK)
-            </span>
-          </li>
-          <li className="text-xs font-semibold text-indigo-300">
-            <span className="text-slate-200 font-bold">DynamoDB</span>
-          </li>
-          <li className="text-xs font-semibold text-indigo-300">
-            <span className="text-slate-200 font-bold">
-              Amazon Web Services (AWS)
-            </span>
+            <span className="text-slate-200 font-bold">AWS</span>
           </li>
           <li className="text-xs font-semibold text-indigo-300">
             <span className="text-slate-200 font-bold">Go</span>
           </li>
           <li className="text-xs font-semibold text-indigo-300">
-            <span className="text-slate-200 font-bold">Python</span>
+            <span className="text-slate-200 font-bold">NoSQL</span>
+          </li>
+          <li className="text-xs font-semibold text-indigo-300">
+            <span className="text-slate-200 font-bold">SQL</span>
           </li>
         </ul>
       </div>
