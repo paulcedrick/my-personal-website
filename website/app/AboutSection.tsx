@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <div className="w-3/4 mx-auto relative h-screen mt-20">
+    <div className="w-3/4 mx-auto relative min-h-screen mt-20">
       <div className="flex items-center gap-4">
         <h2 className="text-2xl md:text-4xl font-bold text-neutral-200">
           About Me

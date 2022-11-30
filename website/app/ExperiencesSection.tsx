@@ -23,10 +23,10 @@ function CustomTab({ children }: { children: React.ReactNode }) {
 
 export default function ExperiencesSection() {
   return (
-    <div className="w-3/4 mx-auto relative h-screen">
+    <div className="w-3/4 mx-auto relative mb-20">
       <div className="flex items-center gap-4 justify-center">
         <div className="w-1/3 h-[0.5px] bg-indigo-300" />
-        <h2 className="text-2xl md:text-4xl font-bold text-neutral-200">
+        <h2 className="text-2xl md:text-4xl font-bold text-slate-300">
           Experiences
         </h2>
         <div className="w-1/3 h-[0.5px] bg-indigo-300" />

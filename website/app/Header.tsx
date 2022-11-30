@@ -65,7 +65,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      <NavDrawer open={open} onClose={() => setOpen(false)} />
+      <NavDrawer open={open} />
     </header>
   );
 }

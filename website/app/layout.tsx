@@ -2,6 +2,7 @@ import "./globals.css";
 import { Quicksand } from "@next/font/google";
 import Header from "./Header";
 import Socials from "./Socials";
+import Footer from "./Footer";
 
 const font = Quicksand({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Socials />
+        <Footer />
       </body>
     </html>
   );
