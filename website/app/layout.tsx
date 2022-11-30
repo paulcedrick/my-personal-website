@@ -3,7 +3,9 @@ import { Quicksand } from "@next/font/google";
 import Header from "./Header";
 import Socials from "./Socials";
 
-const font = Quicksand();
+const font = Quicksand({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
