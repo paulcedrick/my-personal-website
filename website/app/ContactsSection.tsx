@@ -1,6 +1,6 @@
 export default function ContactsSection() {
   return (
-    <div className="relative mx-auto mt-40 mb-40 w-3/4">
+    <div id="contact-us-section" className="relative mx-auto mt-40 mb-40 w-3/4">
       <div className="flex items-center justify-center gap-4">
         <h2 className="text-2xl font-bold text-slate-300 md:text-4xl">
           Get in touch!

@@ -1,6 +1,8 @@
 "use client";
+
 import Image from "next/image";
 import { useCallback, useState } from "react";
+import { motion } from "framer-motion";
 import LogoSmall from "../public/logo-small.png";
 import NavDrawer from "./NavDrawer";
 import NavItem from "./NavItem";
@@ -8,15 +10,31 @@ import NavItem from "./NavItem";
 export default function Header() {
   const [open, setOpen] = useState(false);
 
+  const handleLinkClick = (sectionId: string) => () => {
+    const element = document.getElementById(sectionId);
+
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const handleMenu = useCallback(() => {
     setOpen(!open);
   }, [open]);
 
   return (
-    <header className="fixed top-0 left-0 z-20 flex h-16 w-full items-center bg-neutral-900 shadow-lg md:h-20">
+    <motion.header
+      initial="hidden"
+      whileInView="visible"
+      className="fixed top-0 left-0 z-20 flex h-16 w-full items-center bg-neutral-900 shadow-lg md:h-20"
+    >
       <div className="container mx-auto flex w-full flex-row items-center justify-between px-10 md:hidden">
         <div>
-          <Image src={LogoSmall} alt="logo-mobile" className="h-10 w-[80px]" />
+          <a onClick={handleLinkClick("hero-section")} href="#home">
+            <Image
+              src={LogoSmall}
+              alt="logo-mobile"
+              className="h-10 w-[80px]"
+            />
+          </a>
         </div>
         <div>
           <button
@@ -50,16 +68,25 @@ export default function Header() {
         </div>
         <ul className="flex items-center gap-4">
           <NavItem>
-            <a href="#about">About</a>
+            <a onClick={handleLinkClick("about-section")} href="#about">
+              About
+            </a>
           </NavItem>
           <NavItem>
-            <a href="#experiences">Experiences</a>
+            <a
+              onClick={handleLinkClick("experiences-section")}
+              href="#experiences"
+            >
+              Experiences
+            </a>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <a href="#projects">Projects</a>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleLinkClick("contact-us-section")}>
+              Contact
+            </a>
           </NavItem>
           <button className="rounded-md border-2 border-indigo-300 py-2 px-4 font-bold text-indigo-300 hover:bg-indigo-300 hover:text-neutral-900">
             Resume
@@ -67,7 +94,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      <NavDrawer open={open} />
-    </header>
+      <NavDrawer onClose={() => setOpen(false)} open={open} />
+    </motion.header>
   );
 }

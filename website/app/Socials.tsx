@@ -3,8 +3,8 @@ import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
 
 export default function Socials() {
   return (
-    <div className="fixed bottom-0 left-16 hidden md:block">
-      <ul className="after:block after:w-0.5 after:h-20 after:mx-auto after:bg-slate-100 flex flex-col gap-4">
+    <div className="fixed bottom-0 left-16 hidden lg:block">
+      <ul className="flex flex-col gap-4 after:mx-auto after:block after:h-20 after:w-0.5 after:bg-slate-100">
         <li className="cursor-pointer">
           <a
             target="_blank"

@@ -10,8 +10,8 @@ function CustomTab({ children }: { children: React.ReactNode }) {
         <button
           className={
             selected
-              ? "whitespace-nowrap rounded-md bg-indigo-300 bg-opacity-40 p-1 text-sm font-normal text-white focus:ring-0 focus-visible:ring-0 sm:whitespace-pre"
-              : "whitespace-nowrap rounded-md p-1 text-sm font-normal text-white focus:ring-0 focus-visible:ring-0"
+              ? "whitespace-nowrap rounded-md bg-indigo-300 bg-opacity-40 p-1 text-sm font-normal text-white focus:ring-0 focus-visible:ring-0 sm:whitespace-pre sm:text-base"
+              : "whitespace-nowrap rounded-md p-1 text-sm font-normal text-white focus:ring-0 focus-visible:ring-0 sm:text-base"
           }
         >
           {children}
@@ -23,7 +23,7 @@ function CustomTab({ children }: { children: React.ReactNode }) {
 
 export default function ExperiencesSection() {
   return (
-    <div className="relative mx-auto mb-20 w-3/4">
+    <div id="experiences-section" className="relative mx-auto mb-20 w-3/4">
       <div className="flex items-center justify-center gap-4">
         <div className="h-[0.5px] w-1/3 bg-indigo-300" />
         <h2 className="text-2xl font-bold text-slate-300 md:text-4xl">
@@ -42,48 +42,48 @@ export default function ExperiencesSection() {
           </Tab.List>
           <Tab.Panels className="p-1 sm:basis-8/12">
             <Tab.Panel>
-              <p className="text-sm font-semibold">Year</p>
-              <p className="text-sm font-normal">2022 - Present</p>
+              <p className="text-sm font-semibold sm:text-base">Year</p>
+              <p className="text-sm font-normal sm:text-base">2022 - Present</p>
 
               <div className="mt-4">
-                <p className="text-sm font-semibold">Summary</p>
-                <p className="text-sm">
+                <p className="text-sm font-semibold sm:text-base">Summary</p>
+                <p className="text-sm sm:text-base">
                   Officia Lorem aute cupidatat fugiat ullamco excepteur veniam
                   sit velit excepteur veniam occaecat elit.
                 </p>
               </div>
             </Tab.Panel>
             <Tab.Panel>
-              <p className="text-sm font-semibold">Year</p>
-              <p className="text-sm font-normal">2014 - 2021</p>
+              <p className="text-sm font-semibold sm:text-base">Year</p>
+              <p className="text-sm font-normal sm:text-base">2014 - 2021</p>
 
               <div className="mt-4">
-                <p className="text-sm font-semibold">Summary</p>
-                <p className="text-sm">
+                <p className="text-sm font-semibold sm:text-base">Summary</p>
+                <p className="text-sm sm:text-base">
                   Officia Lorem aute cupidatat fugiat ullamco excepteur veniam
                   sit velit excepteur veniam occaecat elit.
                 </p>
               </div>
             </Tab.Panel>
             <Tab.Panel>
-              <p className="text-sm font-semibold">Year</p>
-              <p className="text-sm font-normal">2017 - 2020</p>
+              <p className="text-sm font-semibold sm:text-base">Year</p>
+              <p className="text-sm font-normal sm:text-base">2017 - 2020</p>
 
               <div className="mt-4">
-                <p className="text-sm font-semibold">Summary</p>
-                <p className="text-sm">
+                <p className="text-sm font-semibold sm:text-base">Summary</p>
+                <p className="text-sm sm:text-base">
                   Officia Lorem aute cupidatat fugiat ullamco excepteur veniam
                   sit velit excepteur veniam occaecat elit.
                 </p>
               </div>
             </Tab.Panel>
             <Tab.Panel>
-              <p className="text-sm font-semibold">Year</p>
-              <p className="text-sm font-normal">2014 - 2016</p>
+              <p className="text-sm font-semibold sm:text-base">Year</p>
+              <p className="text-sm font-normal sm:text-base">2014 - 2016</p>
 
               <div className="mt-4">
-                <p className="text-sm font-semibold">Summary</p>
-                <p className="text-sm">
+                <p className="text-sm font-semibold sm:text-base">Summary</p>
+                <p className="text-sm sm:text-base">
                   Officia Lorem aute cupidatat fugiat ullamco excepteur veniam
                   sit velit excepteur veniam occaecat elit.
                 </p>
