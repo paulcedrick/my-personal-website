@@ -10,8 +10,8 @@ function CustomTab({ children }: { children: React.ReactNode }) {
         <button
           className={
             selected
-              ? "text-sm bg-indigo-300 bg-opacity-40 font-normal text-white p-1 rounded-md whitespace-nowrap sm:whitespace-pre focus:ring-0 focus-visible:ring-0"
-              : "text-sm text-white font-normal p-1 rounded-md whitespace-nowrap focus:ring-0 focus-visible:ring-0"
+              ? "whitespace-nowrap rounded-md bg-indigo-300 bg-opacity-40 p-1 text-sm font-normal text-white focus:ring-0 focus-visible:ring-0 sm:whitespace-pre"
+              : "whitespace-nowrap rounded-md p-1 text-sm font-normal text-white focus:ring-0 focus-visible:ring-0"
           }
         >
           {children}
@@ -23,24 +23,24 @@ function CustomTab({ children }: { children: React.ReactNode }) {
 
 export default function ExperiencesSection() {
   return (
-    <div className="w-3/4 mx-auto relative mb-20">
-      <div className="flex items-center gap-4 justify-center">
-        <div className="w-1/3 h-[0.5px] bg-indigo-300" />
-        <h2 className="text-2xl md:text-4xl font-bold text-slate-300">
+    <div className="relative mx-auto mb-20 w-3/4">
+      <div className="flex items-center justify-center gap-4">
+        <div className="h-[0.5px] w-1/3 bg-indigo-300" />
+        <h2 className="text-2xl font-bold text-slate-300 md:text-4xl">
           Experiences
         </h2>
-        <div className="w-1/3 h-[0.5px] bg-indigo-300" />
+        <div className="h-[0.5px] w-1/3 bg-indigo-300" />
       </div>
 
       <div className="mt-4">
-        <Tab.Group as="div" className="sm:flex sm:items-start gap-6">
-          <Tab.List className="flex items-center sm:flex-col sm:items-start gap-6 overflow-x-auto max-w-full mb-4">
+        <Tab.Group as="div" className="gap-6 sm:flex sm:items-start">
+          <Tab.List className="mb-4 flex max-w-full items-center gap-4 overflow-x-auto sm:basis-4/12 sm:flex-col sm:items-start">
             <CustomTab>Kroma Entertainment</CustomTab>
             <CustomTab>Freelance</CustomTab>
             <CustomTab>UGroop</CustomTab>
             <CustomTab>Codesignate</CustomTab>
           </Tab.List>
-          <Tab.Panels className="p-1">
+          <Tab.Panels className="p-1 sm:basis-8/12">
             <Tab.Panel>
               <p className="text-sm font-semibold">Year</p>
               <p className="text-sm font-normal">2022 - Present</p>

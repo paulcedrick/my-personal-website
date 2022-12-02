@@ -24,10 +24,10 @@ export default function Footer() {
         </li>
       </ul>
       <div className="text-center">
-        <p className="text-xs text-slate-300 font-semibold mb-1">
+        <p className="mb-1 text-xs font-semibold text-slate-300">
           Designed & Built by Paul Cedrick Artigo
         </p>
-        <p className="text-xs text-slate-300 font-semibold">
+        <p className="text-xs font-semibold text-slate-300">
           Logo Designed by Ilene Natividad
         </p>
       </div>

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 function Pill({ children }: { children: ReactNode }) {
   return (
-    <div className="bg-indigo-200 bg-opacity-30 px-4 py-1 rounded-md text-slate-300 text-sm font-semibold">
+    <div className="rounded-md bg-indigo-200 bg-opacity-30 px-4 py-1 text-sm font-semibold text-slate-300">
       {children}
     </div>
   );
@@ -18,15 +18,15 @@ function ProjectCard({
   tags?: Array<{ name: string }>;
 }) {
   return (
-    <div className="flex flex-col gap-4 p-4 border-indigo-800 border-2 border-dashed rounded-sm">
-      <div className="hidden sm:flex items-center justify-center bg-neutral-800 rounded-xl p-4 relative">
+    <div className="flex flex-col gap-4 rounded-sm border-2 border-dashed border-indigo-800 p-4">
+      <div className="relative hidden items-center justify-center rounded-xl bg-neutral-800 p-4 sm:flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="h-6 w-6"
         >
           <path
             strokeLinecap="round"
@@ -39,7 +39,7 @@ function ProjectCard({
         <h3 className="text-xl font-bold text-slate-300">{title}</h3>
         <p className="text-md text-justify">{description}</p>
         {tags && (
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-4">
             {tags.map((tag, idx) => (
               <Pill key={`${idx}-${tag.name}`}>{tag.name}</Pill>
             ))}
@@ -52,12 +52,12 @@ function ProjectCard({
 
 export default function ProjectsSection() {
   return (
-    <div className="w-3/4 mx-auto relative min-h-screen">
+    <div className="relative mx-auto min-h-screen w-3/4">
       <div className="flex items-center gap-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-slate-300">
+        <h2 className="text-2xl font-bold text-slate-300 md:text-4xl">
           Projects
         </h2>
-        <div className="w-2/3 h-[0.5px] bg-indigo-300" />
+        <div className="h-[0.5px] w-2/3 bg-indigo-300" />
       </div>
 
       <div className="mt-4 flex flex-col gap-4">

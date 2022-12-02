@@ -13,30 +13,30 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="flex h-16 md:h-20 shadow-lg bg-neutral-900 items-center fixed w-full top-0 left-0 z-20">
-      <div className="container mx-auto md:hidden w-full flex flex-row items-center justify-between px-10">
+    <header className="fixed top-0 left-0 z-20 flex h-16 w-full items-center bg-neutral-900 shadow-lg md:h-20">
+      <div className="container mx-auto flex w-full flex-row items-center justify-between px-10 md:hidden">
         <div>
           <Image src={LogoSmall} alt="logo-mobile" className="h-10 w-[80px]" />
         </div>
         <div>
           <button
-            className="text-slate-200 w-10 h-10 relative focus:outline-none "
+            className="relative h-10 w-10 text-slate-200 focus:outline-none "
             onClick={handleMenu}
           >
             <span className="sr-only">Open main menu</span>
-            <div className="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute left-1/2 top-1/2 block w-5   -translate-x-1/2  -translate-y-1/2 transform">
               <span
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${
+                className={`absolute block h-0.5 w-5 transform bg-current transition duration-500 ease-in-out ${
                   open && "rotate-45"
                 } ${!open && "-translate-y-1.5"}`}
               ></span>
               <span
-                className={`block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out ${
+                className={`absolute block  h-0.5 w-5 transform   bg-current transition duration-500 ease-in-out ${
                   open ? "opacity-0" : ""
                 }`}
               ></span>
               <span
-                className={`block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out ${
+                className={`absolute block  h-0.5 w-5 transform bg-current  transition duration-500 ease-in-out ${
                   open && "-rotate-45"
                 } ${!open && "translate-y-1.5"}`}
               ></span>
@@ -44,9 +44,11 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <nav className="container mx-auto flex-row justify-end hidden md:flex">
-        <div></div>
-        <ul className="flex gap-4 items-center">
+      <nav className="container mx-auto hidden flex-row justify-between px-10 md:flex">
+        <div>
+          <Image src={LogoSmall} alt="logo-mobile" className="h-10 w-[80px]" />
+        </div>
+        <ul className="flex items-center gap-4">
           <NavItem>
             <a href="#about">About</a>
           </NavItem>
@@ -59,7 +61,7 @@ export default function Header() {
           <NavItem>
             <a href="#contact">Contact</a>
           </NavItem>
-          <button className="border-2 border-indigo-300 py-2 px-4 rounded-md text-indigo-300 hover:text-neutral-900 hover:bg-indigo-300 font-bold">
+          <button className="rounded-md border-2 border-indigo-300 py-2 px-4 font-bold text-indigo-300 hover:bg-indigo-300 hover:text-neutral-900">
             Resume
           </button>
         </ul>
