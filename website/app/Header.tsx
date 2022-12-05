@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { useCallback, useState } from "react";
-import { motion } from "framer-motion";
 import LogoSmall from "../public/logo-small.png";
 import NavDrawer from "./NavDrawer";
 import NavItem from "./NavItem";
+import classNames from "classnames";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -21,10 +21,10 @@ export default function Header() {
   }, [open]);
 
   return (
-    <motion.header
-      initial="hidden"
-      whileInView="visible"
-      className="fixed top-0 left-0 z-20 flex h-16 w-full items-center bg-neutral-900 shadow-lg md:h-20"
+    <header
+      className={classNames(
+        "fixed top-0 left-0 z-20 flex h-16 w-full items-center bg-neutral-900 shadow-lg md:h-20"
+      )}
     >
       <div className="container mx-auto flex w-full flex-row items-center justify-between px-10 md:hidden">
         <div>
@@ -80,9 +80,6 @@ export default function Header() {
               Experiences
             </a>
           </NavItem>
-          {/* <NavItem>
-            <a href="#projects">Projects</a>
-          </NavItem> */}
           <NavItem>
             <a href="#contact" onClick={handleLinkClick("contact-us-section")}>
               Contact
@@ -95,6 +92,6 @@ export default function Header() {
       </nav>
 
       <NavDrawer onClose={() => setOpen(false)} open={open} />
-    </motion.header>
+    </header>
   );
 }

@@ -76,9 +76,6 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
                             Experiences
                           </a>
                         </NavItem>
-                        {/* <NavItem>
-            <a href="#projects">Projects</a>
-          </NavItem> */}
                         <NavItem>
                           <a
                             href="#contact"

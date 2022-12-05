@@ -3,7 +3,7 @@ import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb";
 export default function Footer() {
   return (
     <footer className="min-h-20 flex flex-col items-center justify-center gap-4 py-6">
-      <ul className="flex flex-row gap-4">
+      <ul className="flex flex-row gap-4 lg:hidden">
         <li className="cursor-pointer">
           <a
             target="_blank"
