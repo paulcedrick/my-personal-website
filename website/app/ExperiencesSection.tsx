@@ -40,16 +40,18 @@ function ExperienceItem({
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 16 }}
     >
-      <p className="text-base font-semibold sm:text-xl">
+      <p className="text-base font-semibold text-slate-200 sm:text-xl">
         {title}{" "}
         {company && <span className="text-indigo-300">@ {company}</span>}
       </p>
-      <p className="mt-2 font-mono text-sm font-normal sm:text-base">{date}</p>
+      <p className="mt-2 font-mono text-sm font-normal text-slate-200 sm:text-base">
+        {date}
+      </p>
 
       <ul className="mt-4 ml-4 flex flex-col gap-4">
         {responsibilities.map((responsibility, i) => (
           <li
-            className="list-disc text-xs text-slate-200 sm:text-sm"
+            className="list-disc text-sm text-slate-200 sm:text-base"
             key={`${i}-${responsibility}`}
           >
             <p>{responsibility}</p>
