@@ -3,7 +3,7 @@ import styles from "./polka.module.css";
 export default function HeroHeader() {
   return (
     <div
-      id="hero-section"
+      id="home"
       className="mx-auto flex h-[100vh] w-full items-center px-10 md:w-3/4"
     >
       <div className="relative z-10">

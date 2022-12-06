@@ -28,7 +28,7 @@ export default function Header() {
     >
       <div className="container mx-auto flex w-full flex-row items-center justify-between px-10 md:hidden">
         <div>
-          <a onClick={handleLinkClick("hero-section")} href="#home">
+          <a onClick={handleLinkClick("home")} href="#home">
             <Image
               src={LogoSmall}
               alt="logo-mobile"
@@ -63,9 +63,9 @@ export default function Header() {
         </div>
       </div>
       <nav className="container mx-auto hidden flex-row justify-between px-10 md:flex">
-        <div>
+        <a onClick={handleLinkClick("home")} href="#home">
           <Image src={LogoSmall} alt="logo-mobile" className="h-10 w-[80px]" />
-        </div>
+        </a>
         <ul className="flex items-center gap-4">
           <NavItem>
             <a onClick={handleLinkClick("about-section")} href="#about">
