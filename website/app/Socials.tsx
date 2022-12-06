@@ -17,7 +17,7 @@ export default function Socials() {
         <li className="cursor-pointer">
           <a
             target="_blank"
-            href="https://github.com/paulcedrick"
+            href="https://www.linkedin.com/in/paul-cedrick-artigo-227644a1/"
             rel="noreferrer"
           >
             <TbBrandLinkedin size="32" className="hover:text-indigo-300" />
