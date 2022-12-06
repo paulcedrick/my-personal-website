@@ -2,7 +2,7 @@ export default function AboutSection() {
   return (
     <>
       <div id="about-section"></div>
-      <div className="relative mx-auto mt-20 min-h-screen w-3/4">
+      <div className="relative mx-auto mt-20 w-3/4">
         <div className="mt-16 flex items-center gap-4">
           <h2 className="text-2xl font-bold text-neutral-200 md:text-4xl">
             About Me
@@ -10,7 +10,7 @@ export default function AboutSection() {
           <div className="h-[0.5px] w-1/3 bg-indigo-300" />
         </div>
 
-        <div className="mt-10 md:mt-20">
+        <div className="mt-10">
           <p className="max-w-2xl text-sm text-slate-300 sm:text-base md:text-lg">
             Hello! My name is Paul Cedrick Artigo and I enjoy learning new
             things and building cool stuff. My interest in programming in

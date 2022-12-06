@@ -1,6 +1,9 @@
 export default function ContactsSection() {
   return (
-    <div id="contact-us-section" className="relative mx-auto mt-40 mb-40 w-3/4">
+    <div
+      id="contact-us-section"
+      className="relative mx-auto mt-96 mb-80 w-3/4 sm:mt-80"
+    >
       <div className="flex items-center justify-center gap-4">
         <h2 className="text-2xl font-bold text-slate-300 md:text-4xl">
           Get in touch!
@@ -13,7 +16,7 @@ export default function ContactsSection() {
           back to you!
         </p>
         <a
-          href="#"
+          href="mailto:paulcedrick.artigo@gmail.com"
           className="rounded-md border-2 border-indigo-300 py-2 px-4 font-bold text-indigo-300 hover:bg-indigo-300 hover:text-neutral-900"
         >
           Say Hi!

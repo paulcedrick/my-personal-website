@@ -85,9 +85,9 @@ export default function Header() {
               Contact
             </a>
           </NavItem>
-          <button className="rounded-md border-2 border-indigo-300 py-2 px-4 font-bold text-indigo-300 hover:bg-indigo-300 hover:text-neutral-900">
+          {/* <button className="rounded-md border-2 border-indigo-300 py-2 px-4 font-bold text-indigo-300 hover:bg-indigo-300 hover:text-neutral-900">
             Resume
-          </button>
+          </button> */}
         </ul>
       </nav>
 
